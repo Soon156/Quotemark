@@ -1,0 +1,19 @@
+{
+  "v": 1,
+  "name": "Code review",
+  "tags": [
+    { "k": "Bug",         "c": "#b5485d", "rule": "Produces wrong behaviour. Must be fixed." },
+    { "k": "Edge case",   "c": "#c0603a", "rule": "Null, bounds, concurrency, or an error path is unhandled." },
+    { "k": "Performance", "c": "#4a7ba7", "rule": "Avoidable complexity or repeated work." },
+    { "k": "Readability", "c": "#6b8e23", "rule": "Naming, structure, or comments mislead the reader." },
+    { "k": "Duplication", "c": "#8a6d3b", "rule": "Repeats logic from elsewhere. Extract or delete." },
+    { "k": "Tests",       "c": "#7a5c9e", "rule": "Missing coverage, or the assertion does not prove much." },
+    { "k": "Question",    "c": "#3f8a7d", "rule": "Intent unclear. Ask the author." },
+    { "k": "Other",       "c": "#8a837a", "rule": "" }
+  ],
+  "tocRule": "custom",
+  "tocCustom": "^(?:export\\s+)?(?:async\\s+)?(?:function|class|def|type|interface|const)\\s+(\\w+)",
+  "exportNote": "Work through these one at a time. Do not merge them. Give the final diff and the line numbers you landed on.",
+  "docFont": "mono",
+  "docSize": "14px"
+}
